@@ -304,7 +304,7 @@
 			<div class="main-slider-3">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<div class="banner-inner overflow-hidden" data-swiper-parallax="-10" data-swiper-parallax-duration="0.5" style="background-image:url('assets/images/main-slider/slider2/bg1.jpg'); background-size:cover;">
+						<div class="banner-inner overflow-hidden" data-swiper-parallax="-10" data-swiper-parallax-duration="0.5" style="background-image:url({{asset('imgs/20.jpeg')}}); background-size:cover;">
 							<div class="container">
 								<div class="row align-items-center" data-swiper-parallax="-100">
 									<div class="col-xl-7 col-lg-7 col-md-8">
@@ -351,8 +351,8 @@
 										</div>
 									</div>
 									<div class="col-xl-5 col-lg-5 col-md-4">
-										<div class="banner-media">
-											<img src="assets/images/main-slider/slider2/pic1.png" alt="/" data-swiper-parallax-scale="0.8">
+										<div class="bannr-media">
+											{{-- <img src="assets/images/main-slider/slider2/pic1.png" alt="/" data-swiper-parallax-scale="0.8"> --}}
 										</div>
 									</div>
 								</div>
@@ -361,7 +361,7 @@
 						</div>
 					</div>
 					<div class="swiper-slide">
-						<div class="banner-inner overflow-hidden" data-swiper-parallax="-10" data-swiper-parallax-duration="0.5" style="background-image:url('assets/images/main-slider/slider2/bg2.jpg'); background-size:cover;">
+						<div class="banner-inner overflow-hidden" data-swiper-parallax="-10" data-swiper-parallax-duration="0.5" style="background-image:url({{asset('imgs/17.jpeg')}}); background-size:cover;">
 							<div class="container">
 								<div class="row align-items-center" data-swiper-parallax="-100">
 									<div class="col-xl-7 col-lg-7 col-md-8">
@@ -389,7 +389,7 @@
 													<div class="dz-left">
 														<div class="profile-info">
 															<div class="dz-media">
-																<img src="assets/images/team/pic1.jpg" alt="/">
+																{{-- <img src="{{asset('imgs/17.jpeg')}}" alt="/"> --}}
 															</div>
 															<div class="dz-content">
 																<h6 class="title text-white">Carry Mint</h6>
@@ -408,17 +408,17 @@
 										</div>
 									</div>
 									<div class="col-xl-5 col-lg-5 col-md-4">
-										<div class="banner-media">
-											<img src="assets/images/main-slider/slider2/pic2.png" alt="/" data-swiper-parallax-scale="0.8">
+										<div class="baner-media">
+											{{-- <img src="{{asset('imgs/17.jpeg')}}" alt="/" data-swiper-parallax-scale="0.8"> --}}
 										</div>
 									</div>
 								</div>
 							</div>
-							<img class="leaf" src="assets/images/main-slider/slider2/pic4.png" alt="/">
+							{{-- <img class="leaf" src="assets/images/main-slider/slider2/pic4.png" alt="/"> --}}
 						</div>
 					</div>
 					<div class="swiper-slide">
-						<div class="banner-inner overflow-hidden" data-swiper-parallax="-10" data-swiper-parallax-duration="0.5" style="background-image:url('assets/images/main-slider/slider2/bg3.jpg'); background-size:cover;">
+						<div class="banner-inner overflow-hidden" data-swiper-parallax="-10" data-swiper-parallax-duration="0.5" style="background-image:url({{asset('imgs/14.jpeg')}}); background-size:cover;">
 							<div class="container">
 								<div class="row align-items-center" data-swiper-parallax="-100">
 									<div class="col-xl-7 col-lg-7 col-md-8">
@@ -465,13 +465,13 @@
 										</div>
 									</div>
 									<div class="col-xl-5 col-lg-5 col-md-4">
-										<div class="banner-media">
-											<img src="assets/images/main-slider/slider2/pic3.png" alt="/" data-swiper-parallax-scale="0.8">
+										<div class="bnner-media">
+											{{-- <img src="assets/images/main-slider/slider2/pic3.png" alt="/" data-swiper-parallax-scale="0.8"> --}}
 										</div>
 									</div>
 								</div>
 							</div>
-							<img class="leaf" src="assets/images/main-slider/slider2/pic4.png" alt="/">
+							{{-- <img class="leaf" src="assets/images/main-slider/slider2/pic4.png" alt="/"> --}}
 						</div>
 					</div>
 				</div>
@@ -539,7 +539,43 @@
 			</div>
 		</section>
 		<!-- Advertisement Box -->
-
+		<section class="content-inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<img src="{{asset('imgs/24.jpeg')}}" height="150" class="img-fluid" alt="">
+					</div>
+					<div class="col-md-4">
+						<div class="section-head text-center">
+							<h2 class="title wow flipInX" data-wow-delay="0.2s">Urban Culture Vibes</h2>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id iure optio fugit quia
+							enim praesentium nostrum nemo est at quaerat
+							aperiam, modi nobis nulla quasi voluptatem doloribus, possimus pariatur reiciendis.
+						</p>
+						<a href="contact-us.html" class="mt-5 btn btn-primary btn-md shadow-primary m-r30 btn-hover-1"><span>Check Us Out</span></a>
+					</div>
+				</div>
+				<div class="mt-5"></div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="section-head text-center">
+							<h2 class="title wow flipInX" data-wow-delay="0.2s">Food & Drinks</h2>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id iure optio fugit quia
+							enim praesentium nostrum nemo est at quaerat
+							aperiam, modi nobis nulla quasi voluptatem doloribus, possimus pariatur reiciendis.
+						</p>
+						<a href="contact-us.html" class="mt-5 btn btn-primary btn-md shadow-primary m-r30 btn-hover-1"><span>Check Us Out</span></a>
+					</div>
+					<div class="col-md-8">
+						<img src="{{asset('imgs/20.jpeg')}}" height="150" class="img-fluid" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- Service Section -->
 		<section class="content-inner">
 			<div class="container">
@@ -658,11 +694,24 @@
 		</section>
 		<!-- Service Section -->
 
-        		<!-- Blog Section -->
+		<!-- Socialize Section-->
+		<section class="content-inner-1 section-wrapper-1 bg-parallax" style="background-image:url({{asset('imgs/socialize.jpeg')}}); background-attachment: fixed;">
+			<div class="container">
+				<div class="section-head text-center">
+					<h2 class="title text-white wow flipInX" data-wow-delay="0.2s">Socialize</h2>
+				</div>
+				<div class="col-lg-12 col-md-12 text-center">
+                    <a href="" class="btn btn-lg btn-white btn-hover-1"><span>Our Latest Culture</span></a>
+                </div>
+			</div>
+		</section>
+		<!-- Socialize Section-->
+
+        <!-- Gallery Section -->
 		<section class="content-inner-1">
 			<div class="container">
                 <div class="section-head text-center">
-					<h2 class="title wow flipInX" data-wow-delay="0.2s">Happy Hour</h2>
+					<h2 class="title wow flipInX" data-wow-delay="0.2s">Culture Mambo Gallery</h2>
 				</div>
 				<div class="row loadmore-content">
 					<div class="col-lg-4 col-md-4">
@@ -670,14 +719,14 @@
 							<div class="dz-media">
 								<a href="blog-standard.html"><img src="{{asset('imgs/11.jpeg')}}" alt="/"></a>
 							</div>
-							<div class="dz-info">
+							{{-- <div class="dz-info">
 								<div class="dz-meta">
 									<ul>
 										<li><a href="javascript:void(0);"><i class="flaticon-calendar-date"></i> 26 Jan 2023</a></li>
 									</ul>
 								</div>
 								<h5 class="dz-title"><a href="blog-standard.html">Paradise Taste of Dishes</a></h5>
-							</div>
+							</div> --}}
 						</div>
 					</div>
                     <div class="col-lg-4 col-md-4">
@@ -685,14 +734,14 @@
 							<div class="dz-media">
 								<a href="blog-standard.html"><img src="{{asset('imgs/12.jpeg')}}" alt="/"></a>
 							</div>
-							<div class="dz-info">
+							{{-- <div class="dz-info">
 								<div class="dz-meta">
 									<ul>
 										<li><a href="javascript:void(0);"><i class="flaticon-calendar-date"></i> 26 Jan 2023</a></li>
 									</ul>
 								</div>
 								<h5 class="dz-title"><a href="blog-standard.html">Paradise Taste of Dishes</a></h5>
-							</div>
+							</div> --}}
 						</div>
 					</div>
                     <div class="col-lg-4 col-md-4">
@@ -700,14 +749,14 @@
 							<div class="dz-media">
 								<a href="blog-standard.html"><img src="{{asset('imgs/13.jpeg')}}" alt="/"></a>
 							</div>
-							<div class="dz-info">
+							{{-- <div class="dz-info">
 								<div class="dz-meta">
 									<ul>
 										<li><a href="javascript:void(0);"><i class="flaticon-calendar-date"></i> 26 Jan 2023</a></li>
 									</ul>
 								</div>
 								<h5 class="dz-title"><a href="blog-standard.html">Paradise Taste of Dishes</a></h5>
-							</div>
+							</div> --}}
 						</div>
 					</div>
                     <div class="col-lg-4 col-md-4">
@@ -715,14 +764,14 @@
 							<div class="dz-media">
 								<a href="blog-standard.html"><img src="{{asset('imgs/14.jpeg')}}" alt="/"></a>
 							</div>
-							<div class="dz-info">
+							{{-- <div class="dz-info">
 								<div class="dz-meta">
 									<ul>
 										<li><a href="javascript:void(0);"><i class="flaticon-calendar-date"></i> 26 Jan 2023</a></li>
 									</ul>
 								</div>
 								<h5 class="dz-title"><a href="blog-standard.html">Paradise Taste of Dishes</a></h5>
-							</div>
+							</div> --}}
 						</div>
 					</div>
                     <div class="col-lg-4 col-md-4">
@@ -730,14 +779,14 @@
 							<div class="dz-media">
 								<a href="blog-standard.html"><img src="{{asset('imgs/15.jpeg')}}" alt="/"></a>
 							</div>
-							<div class="dz-info">
+							{{-- <div class="dz-info">
 								<div class="dz-meta">
 									<ul>
 										<li><a href="javascript:void(0);"><i class="flaticon-calendar-date"></i> 26 Jan 2023</a></li>
 									</ul>
 								</div>
 								<h5 class="dz-title"><a href="blog-standard.html">Paradise Taste of Dishes</a></h5>
-							</div>
+							</div> --}}
 						</div>
 					</div>
                     <div class="col-lg-4 col-md-4">
@@ -745,14 +794,14 @@
 							<div class="dz-media">
 								<a href="blog-standard.html"><img src="{{asset('imgs/16.jpeg')}}" alt="/"></a>
 							</div>
-							<div class="dz-info">
+							{{-- <div class="dz-info">
 								<div class="dz-meta">
 									<ul>
 										<li><a href="javascript:void(0);"><i class="flaticon-calendar-date"></i> 26 Jan 2023</a></li>
 									</ul>
 								</div>
 								<h5 class="dz-title"><a href="blog-standard.html">Paradise Taste of Dishes</a></h5>
-							</div>
+							</div> --}}
 						</div>
 					</div>
 				</div>
@@ -788,172 +837,8 @@
 		</section>
 		<!-- Service Section -->
 
-		<!-- Browser Our Menu -->
-		<section class="content-inner-1 overflow-hidden pt-0">
-			<div class="container">
-				<div class="section-head menu-align mt-5">
-					<h2 class="title mb-0 wow flipInX" data-wow-delay="0.2s" data-wow-delay="2s">Browse Our Menu</h2>
-					<div class="pagination-align wow fadeInUp" data-wow-delay="0.4s">
-						<div class="menu-button-prev1 btn-prev rounded-xl btn-hover-2"><i class="fa-solid fa-arrow-left"></i></div>
-						<div class="menu-button-next1 btn-next rounded-xl btn-hover-2"><i class="fa-solid fa-arrow-right"></i></div>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="swiper menu-swiper swiper-visible swiper-item-4">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="dz-img-box style-4 box-hover wow fadeInUp" data-wow-delay="0.4s">
-								<div class="menu-detail">
-									<div class="dz-media">
-										<img src="assets/images/menu-small/pic1.png" alt="/">
-									</div>
-									<div class="dz-content">
-										<h6 class="title"><a href="product-detail.html">Burger</a></h6>
-										<p>Delicious and Spicy</p>
-									</div>
-								</div>
-								<div class="menu-footer">
-									<span>Regular Price</span>
-									<span class="price">Ksh10.00</span>
-								</div>
-								<a class="detail-btn" href="product-detail.html"><i class="fa-solid fa-plus"></i></a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="dz-img-box style-4 box-hover wow fadeInUp" data-wow-delay="0.4s">
-								<div class="menu-detail">
-									<div class="dz-media">
-										<img src="assets/images/menu-small/pic2.png" alt="/">
-									</div>
-									<div class="dz-content">
-										<h6 class="title"><a href="product-detail.html">Hot Rice</a></h6>
-										<p>Delicious and Spicy</p>
-									</div>
-								</div>
-								<div class="menu-footer">
-									<span>Regular Price</span>
-									<span class="price">Ksh15.00</span>
-								</div>
-								<a class="detail-btn" href="product-detail.html"><i class="fa-solid fa-plus"></i></a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="dz-img-box style-4 box-hover wow fadeInUp" data-wow-delay="0.6s">
-								<div class="menu-detail">
-									<div class="dz-media">
-										<img src="assets/images/menu-small/pic3.png" alt="/">
-									</div>
-									<div class="dz-content">
-										<h6 class="title"><a href="product-detail.html">Momos</a></h6>
-										<p>Delicious and Spicy</p>
-									</div>
-								</div>
-								<div class="menu-footer">
-									<span>Regular Price</span>
-									<span class="price">Ksh25.00</span>
-								</div>
-								<a class="detail-btn" href="product-detail.html"><i class="fa-solid fa-plus"></i></a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="dz-img-box style-4 box-hover wow fadeInUp" data-wow-delay="0.8s">
-								<div class="menu-detail">
-									<div class="dz-media">
-										<img src="assets/images/menu-small/pic4.png" alt="/">
-									</div>
-									<div class="dz-content">
-										<h6 class="title"><a href="product-detail.html">Pasta</a></h6>
-										<p>Delicious and Spicy</p>
-									</div>
-								</div>
-								<div class="menu-footer">
-									<span>Regular Price</span>
-									<span class="price">Ksh45.00</span>
-								</div>
-								<a class="detail-btn" href="product-detail.html"><i class="fa-solid fa-plus"></i></a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="dz-img-box style-4 box-hover wow fadeInUp" data-wow-delay="0.10s">
-								<div class="menu-detail">
-									<div class="dz-media">
-										<img src="assets/images/menu-small/pic5.png" alt="/">
-									</div>
-									<div class="dz-content">
-										<h6 class="title"><a href="product-detail.html">Panner</a></h6>
-										<p>Delicious and Spicy</p>
-									</div>
-								</div>
-								<div class="menu-footer">
-									<span>Regular Price</span>
-									<span class="price">Ksh20.00</span>
-								</div>
-								<a class="detail-btn" href="product-detail.html"><i class="fa-solid fa-plus"></i></a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="dz-img-box style-4 box-hover wow fadeInUp" data-wow-delay="0.12s">
-								<div class="menu-detail">
-									<div class="dz-media">
-										<img src="assets/images/menu-small/pic6.png" alt="/">
-									</div>
-									<div class="dz-content">
-										<h6 class="title"><a href="product-detail.html">Soya Rice</a></h6>
-										<p>Delicious and Spicy</p>
-									</div>
-								</div>
-								<div class="menu-footer">
-									<span>Regular Price</span>
-									<span class="price">Ksh90.00</span>
-								</div>
-								<a class="detail-btn" href="product-detail.html"><i class="fa-solid fa-plus"></i></a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="dz-img-box style-4 box-hover wow fadeInUp" data-wow-delay="0.4s">
-								<div class="menu-detail">
-									<div class="dz-media">
-										<img src="assets/images/menu-small/pic1.png" alt="/">
-									</div>
-									<div class="dz-content">
-										<h6 class="title"><a href="product-detail.html">Burger</a></h6>
-										<p>Delicious and Spicy</p>
-									</div>
-								</div>
-								<div class="menu-footer">
-									<span>Regular Price</span>
-									<span class="price">Ksh10.00</span>
-								</div>
-								<a class="detail-btn" href="product-detail.html"><i class="fa-solid fa-plus"></i></a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="dz-img-box style-4 box-hover wow fadeInUp" data-wow-delay="0.4s">
-								<div class="menu-detail">
-									<div class="dz-media">
-										<img src="assets/images/menu-small/pic2.png" alt="/">
-									</div>
-									<div class="dz-content">
-										<h6 class="title"><a href="product-detail.html">Hot Rice</a></h6>
-										<p>Delicious and Spicy</p>
-									</div>
-								</div>
-								<div class="menu-footer">
-									<span>Regular Price</span>
-									<span class="price">Ksh15.00</span>
-								</div>
-								<a class="detail-btn" href="product-detail.html"><i class="fa-solid fa-plus"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Browser Our Menu -->
-
 		<!-- Testimonials -->
-		{{-- <section class="content-inner-2 overflow-hidden">
+		<section class="content-inner-2 overflow-hidden">
 			<div class="container">
 				<div class="section-head text-center">
 					<h2 class="title wow flipInX" data-wow-delay="0.2s">Customer's Comment</h2>
@@ -963,15 +848,15 @@
 						<div class="swiper-slide">
 							<div class="testimonial-2">
 								<div class="dz-media">
-									<img src="assets/images/testimonial/large/pic1.jpg" alt="/">
+									<img src="{{asset('imgs/16.jpeg')}}" alt="/">
 								</div>
 								<div class="testimonial-detail">
 									<div class="testimonial-text wow fadeInUp" data-wow-delay="0.4s">
-										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+										<p>Culture Mambo offered a good set for my party,they organised everything and their food and reception was great.</p>
 									</div>
 									<div class="testimonial-info wow fadeInUp" data-wow-delay="0.6s">
-										<h5 class="testimonial-name">Carry Mint</h5>
-										<span class="testimonial-position">Food Expert</span>
+										<h5 class="testimonial-name">Mary Too</h5>
+										<span class="testimonial-position">Client</span>
 									</div>
 									<i class="flaticon-right-quote quote"></i>
 								</div>
@@ -980,15 +865,15 @@
 						<div class="swiper-slide">
 							<div class="testimonial-2">
 								<div class="dz-media">
-									<img src="assets/images/testimonial/large/pic2.jpg" alt="/">
+									<img src="{{asset('imgs/17.jpeg')}}" alt="/">
 								</div>
 								<div class="testimonial-detail">
 									<div class="testimonial-text wow fadeInUp" data-wow-delay="0.4s">
-										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+										<p>If you need fast food at anytime just visit Culture Mambo, they are located in Nakuru CBD.</p>
 									</div>
 									<div class="testimonial-info wow fadeInUp" data-wow-delay="0.6s">
-										<h5 class="testimonial-name">John Doe</h5>
-										<span class="testimonial-position">Food Expert</span>
+										<h5 class="testimonial-name">John Wairemu</h5>
+										<span class="testimonial-position">Client</span>
 									</div>
 									<i class="flaticon-right-quote quote"></i>
 								</div>
@@ -997,15 +882,15 @@
 						<div class="swiper-slide">
 							<div class="testimonial-2">
 								<div class="dz-media">
-									<img src="assets/images/testimonial/large/pic3.jpg" alt="/">
+									<img src="{{asset('imgs/14.jpeg')}}" alt="/">
 								</div>
 								<div class="testimonial-detail">
 									<div class="testimonial-text wow fadeInUp" data-wow-delay="0.4s">
-										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+										<p>The place is lit. Ambient, good music, energetic hype master, wonderful revelers. I also found the drinks to be decently priced considering the standards. So much sitting space and clean washrooms.</p>
 									</div>
 									<div class="testimonial-info wow fadeInUp" data-wow-delay="0.6s">
-										<h5 class="testimonial-name">Marn Kamk</h5>
-										<span class="testimonial-position">Food Expert</span>
+										<h5 class="testimonial-name">Joseph Kanyi</h5>
+										<span class="testimonial-position">Local Guide</span>
 									</div>
 									<i class="flaticon-right-quote quote"></i>
 								</div>
@@ -1018,7 +903,7 @@
 					</div>
 				</div>
 			</div>
-		</section> --}}
+		</section>
 		<!-- Testimonial -->
 
 	</div>
