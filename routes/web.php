@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Restaurant\DashboardController;
+use App\Http\Controllers\FrontController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -44,5 +45,8 @@ Route::middleware('auth')->group(function () {
 Route::get('', function () {
     return view('welcome');
 });
+
+Route::get('our_menu/',[FrontController::class,'menu']);
+Route::get('our_culture/',[FrontController::class,'culture']);
 
 require __DIR__.'/auth.php';
