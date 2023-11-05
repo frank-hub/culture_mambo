@@ -48,5 +48,7 @@ Route::get('', function () {
 
 Route::get('our_menu/',[FrontController::class,'menu']);
 Route::get('our_culture/',[FrontController::class,'culture']);
+Route::get('about_us/',[FrontController::class,'about']);
+Route::get('contact_us/',[FrontController::class,'contact']);
 
 require __DIR__.'/auth.php';

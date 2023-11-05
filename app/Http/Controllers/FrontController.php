@@ -13,4 +13,12 @@ class FrontController extends Controller
     public function culture(){
         return view('our_culture');
     }
+
+    public function about(){
+        return view('about_us');
+    }
+
+    public function contact(){
+        return view('contact_us');
+    }
 }

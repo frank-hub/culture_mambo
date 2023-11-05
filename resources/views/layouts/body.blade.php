@@ -39,12 +39,34 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com/">
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&amp;family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&amp;family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <style>
+        .whats-app {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 3px 4px 3px #999;
+    left: 15px;
+    z-index: 100;
+}
 
+.my-float {
+    margin-top: 10px;
+}
+    </style>
 </head>
 <body id="bg">
 {{-- <div id="loading-area3" class="loading-page-2">
 	<span class="text">Culture Mambo</span>
 </div> --}}
+<a  class="whats-app" href="https://wa.me/+254713985625" target="_blank">
+    <i class="fab fa-whatsapp my-float"></i>
+</a>
 <div class="page-wraper">
 {{-- <div class="DZ-bt-buy-now DZ-theme-btn"></div> --}}
         <!-- Header -->
@@ -56,7 +78,7 @@
 
                         <!-- Website Logo -->
                         <div class="logo-header mostion">
-                            <a href="index.html" class="aim-logo img-fluid"><img src="assets/images/clogo.jpeg" style="    height: 58px;
+                            <a href="{{url('/')}}" class="aim-logo img-fluid"><img src="{{asset('assets/images/clogo.jpeg')}}" style="    height: 58px;
                                 width: 88px;" alt="/"></a>
                         </div>
 
@@ -84,23 +106,17 @@
                         <!-- Header Nav -->
                         <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown">
                             <div class="logo-header">
-                                <a href="index.html" class="anim-logo"><img src="assets/images/logo.png" alt="/"></a>
+                                <a href="index.html" class="anim-logo"><img src="{{asset('assets/images/clogo.jpeg')}}" alt="/"></a>
                             </div>
                             <ul class="nav navbar-nav navbar ms-lg-4">
                                 <li class=""><a href="/">Home</a></li>
                                 <li class=""><a href="{{url('our_menu')}}">Eat & Drink</a></li>
                                 <li><a href="{{url('our_culture')}}">Our Culture</a></li>
-                                <li><a href="contact-us.html">About Us</a></li>
-                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li><a href={{url('about_us')}}>About Us</a></li>
+                                <li><a href="{{url('contact_us')}}">Contact Us</a></li>
 								<li class="has-mega-menu">
                                     <a href="javascript:void(0);">More</a>
                                     <ul class="mega-menu">
-                                        <li><a href="javascript:;">Pages</a>
-                                            <ul>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                            </ul>
-                                        </li>
                                         <li><a href="javascript:;">Our Services</a>
                                             <ul>
                                                 <li><a href="our-menu-1.html">Service 1</a></li>
@@ -108,7 +124,8 @@
                                                 <li><a href="our-menu-3.html">Service 3</a></li>
                                             </ul>
                                         </li>
-                                        <li class="header-adv p-0"><img src="assets/images/adv-media.jpg" alt="/"></li>
+                                        <li class="header-adv p-0"><img src="{{asset('imgs/ads/13.jpeg')}}" alt="/"></li>
+                                        <li class="header-adv p-0"><img src="{{asset('imgs/ads/14.jpeg')}}" alt="/"></li>
                                     </ul>
                                 </li>
                             </ul>

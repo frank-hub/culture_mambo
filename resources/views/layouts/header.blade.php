@@ -4,7 +4,7 @@
 <head>
 
 	<!-- Title -->
-	<title>Culture Mambo Hotel</title>
+	<title>Culture Mambo Lounge</title>
 
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -23,9 +23,13 @@
 
 	<!-- Stylesheet -->
 	<link href="{{asset('assets/vendor/animate/animate.css')}}" rel="stylesheet">
-    {{-- <link href="{{asset('assets/vendor/magnific-popup/magnific-popup.min.css')}}" rel="stylesheet"> --}}
+    <link href="{{asset('assets/vendor/magnific-popup/magnific-popup.min.css')}}" rel="stylesheet">
 	<link href="{{asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 	<link href="{{asset('assets/vendor/bootstrap-select/css/bootstrap-select.min.css')}}" rel="stylesheet">
+
+    <link href="assets/vendor/lightgallery/dist/css/lightgallery.css" rel="stylesheet">
+    <link href="assets/vendor/lightgallery/dist/css/lg-thumbnail.css" rel="stylesheet">
+    <link href="assets/vendor/lightgallery/dist/css/lg-zoom.css" rel="stylesheet">
 
 	<!-- Custom Stylesheet -->
     <link rel="stylesheet" href="{{asset('assets/vendor/rangeslider/rangeslider.css')}}">
@@ -56,7 +60,7 @@
 
                         <!-- Website Logo -->
                         <div class="logo-header mostion">
-                            <a href="index.html" class="aim-logo img-fluid"><img src="assets/images/clogo.jpeg" style="    height: 58px;
+                            <a href="index.html" class="aim-logo img-fluid"><img src="{{asset('assets/images/clogo.jpeg')}}" style="    height: 58px;
                                 width: 88px;" alt="/"></a>
                         </div>
 
@@ -84,23 +88,17 @@
                         <!-- Header Nav -->
                         <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown">
                             <div class="logo-header">
-                                <a href="index.html" class="anim-logo"><img src="assets/images/logo.png" alt="/"></a>
+                                <a href="index.html" class="anim-logo"><img src="{{asset('assets/images/clogo.jpeg')}}" alt="/"></a>
                             </div>
                             <ul class="nav navbar-nav navbar white ms-lg-4">
                                 <li class=""><a href="/">Home</a></li>
                                 <li class=""><a href="{{url('our_menu')}}">Eat & Drink</a></li>
                                 <li><a href="{{url('our_culture')}}">Our Culture</a></li>
-                                <li><a href="contact-us.html">About Us</a></li>
-                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li><a href={{url('about_us')}}>About Us</a></li>
+                                <li><a href="{{url('contact_us')}}">Contact Us</a></li>
 								<li class="has-mega-menu">
                                     <a href="javascript:void(0);">More</a>
                                     <ul class="mega-menu">
-                                        <li><a href="javascript:;">Pages</a>
-                                            <ul>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                            </ul>
-                                        </li>
                                         <li><a href="javascript:;">Our Services</a>
                                             <ul>
                                                 <li><a href="our-menu-1.html">Service 1</a></li>
@@ -108,7 +106,8 @@
                                                 <li><a href="our-menu-3.html">Service 3</a></li>
                                             </ul>
                                         </li>
-                                        <li class="header-adv p-0"><img src="assets/images/adv-media.jpg" alt="/"></li>
+                                        <li class="header-adv p-0"><img src="{{asset('imgs/ads/13.jpeg')}}" alt="/"></li>
+                                        <li class="header-adv p-0"><img src="{{asset('imgs/ads/14.jpeg')}}" alt="/"></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -314,6 +313,9 @@
 <script src="assets/vendor/imagesloaded/imagesloaded.js"></script><!-- IMAGESLOADED -->
 <script src="assets/vendor/counter/waypoints-min.js"></script><!-- WAYPOINTS JS -->
 <script src="assets/vendor/counter/counterup.min.js"></script><!-- COUNTERUP JS -->
+<script src="assets/vendor/lightgallery/dist/lightgallery.min.js"></script>
+<script src="assets/vendor/lightgallery/dist/plugins/thumbnail/lg-thumbnail.min.js"></script>
+<script src="assets/vendor/lightgallery/dist/plugins/zoom/lg-zoom.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script><!-- OWL-CAROUSEL -->
 <script src="assets/vendor/particles/particles.js"></script>
 <script src="assets/vendor/particles/particles-app.js"></script>
